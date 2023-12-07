@@ -12,23 +12,20 @@ namespace MilkBottleBeerBottle
         public static string Beer() 
         {
             int amount = 99;
-            string bottles = "bottles";
             while (amount > 0)
             {
                 if (amount == 1)
                 {
-                    bottles = "bottle";
-                    Console.WriteLine($"{amount} {bottles} of beer on the wall, {amount} {bottles} of beer.");
+                    Console.WriteLine($"{amount} bottle of beer on the wall, {amount} bottle of beer.");
                     break;
                 }
-                Console.WriteLine($"{amount} {bottles} of beer on the wall, {amount} {bottles}  of beer.");
+                Console.WriteLine($"{amount} bottles of beer on the wall, {amount} bottles of beer.");
                 if (amount - 1 == 1)
                 {
-                    bottles = "bottle";
-                    Console.WriteLine($"Take one down and pass it around, {amount - 1} {bottles} of beer on the wall.\n");
+                    Console.WriteLine($"Take one down and pass it around, {amount - 1} bottle of beer on the wall.\n");
                 }
                 else
-                    Console.WriteLine($"Take one down and pass it around, {amount - 1} {bottles} of beer on the wall.\n");
+                    Console.WriteLine($"Take one down and pass it around, {amount - 1} bottles of beer on the wall.\n");
                 amount--;
             }
             return "";
